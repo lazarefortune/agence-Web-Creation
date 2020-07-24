@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Metal';
+  src: url('fonts/MetalMania-Regular.ttf') format('truetype');
+}
+
+body {
+  /* font-family: "Metal"; */
+}
+
+.boutton_bleu{
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  background-color: #267ffd;
+  color: white !important;
+  justify-content: center;
+  transition: all;
+  box-shadow: rgb(38, 127, 253) 0px 0px 0px 1px, rgba(11, 37, 75, 0.12) 0px 2px 4px -2px;
+  text-decoration: none !important;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 600px !important;
+  padding: 0px 24px;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ordi_non{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  .navbar-collapse > ul > li{
+    margin-left: 30px;
+  }
+
+}
+
+@@media (max-width: 768px) {
+  .search{
+    display: flex;
+  }
+  .miniformsearch{
+    display: flex;
+  }
+  .maxform{
+    display: none;
+  }
+
+  .navbar{
+    font-size: 24px !important;
+  }
+  .mobile_oui{
+    display: block;
+  }
+}
+/* Show it is fixed to the top */
+body {
+    /* min-height: 75rem;*/
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  font-weight: 400 !important;
+  background-color: rgb(240, 240, 240);
+}
+
+.icon-bar {
+  width: 22px;
+  height: 2px;
+  background-color: #B6B6B6;
+  display: block;
+  transition: all 0.2s;
+  margin-top: 4px
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.middle-bar{
+  opacity: 0 !important;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.navbar{
+  background-color: rgb(255,255,255) !important;
+  color: red !important;
+}
+.navbar-toggler{
+  padding: : 60px !important;
+}
+
+@font-face {
+    font-family: test;
+    src: url('/fonts/test2.ttf') format('ttf');
+}
+/*
+
+textarea {
+resize: none;
+}
+.form-label {
+font-size: 12px;
+color: #5e9bfc;
+margin: 0;
+display: block;
+opacity: 1;
+-webkit-transition: .333s ease top, .333s ease opacity;
+transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+border-radius: 0;
+border-color: #ccc;
+border-width: 0 0 2px 0;
+border-style: none none solid none;
+box-shadow: none;
+}
+.form-control:focus {
+box-shadow: none;
+border-color: #5e9bfc;
+}
+.js-hide-label {
+opacity: 0;
+}
+.js-unhighlight-label {
+color: #999
+}
+.btn-start-order {
+background: 0 0 #ffffff;
+border: 1px solid #2f323a;
+border-radius: 3px;
+color: #2f323a;
+font-family: "Raleway", sans-serif;
+font-size: 16px;
+line-height: inherit;
+margin: 30px 0;
+padding: 10px 50px;
+text-transform: uppercase;
+transition: all 0.25s ease 0s;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+border-color: #5e9bfc;
+color: #5e9bfc;
+}
+*/
+a{
+  text-decoration: none !important;
+}
+
+
+/* Style autocomplete */
+
+input {
+  border: 1px solid transparent;
+/*  background-color: #f1f1f1;*/
+  padding: 10px;
+  font-size: 16px;
+}
+.input_style {
+/*  background-color: #f1f1f1; */
+  width: 100%;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
